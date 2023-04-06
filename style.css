@@ -1,0 +1,64 @@
+.heimu, .heimu a, a .heimu, .heimu a.new {
+    background-color: #252525;
+    color: #252525;
+    text-shadow: none;
+}
+.heimu:hover, .heimu:active, .heimu:hover .heimu, .heimu:active .heimu {
+    color: white;
+}
+.heimu:hover a, a:hover .heimu, .heimu:active a, a:active .heimu {
+    color: aqua;
+}
+.heimu:hover .new, .heimu .new:hover, .new:hover .heimu, .heimu:active .new, .heimu .new:active, .new:active .heimu {
+    color: #BA0000;
+}
+
+.daohang div{
+    margin: 0px auto;
+    height: 50px;
+    width: auto;
+    padding: 0px;
+    overflow: hidden;
+    position: fixed;/*因固定要求勿改*/
+    left: 0;
+    right: 0;
+    top: 0;/*因置顶要求勿改*/
+    background-color: white;
+}
+.daohang ul {/*设置导航栏的框框*/
+    margin: 0px auto;/*框框整体的位置；因居中要求勿改*/
+    height: 50px;/*框框的长度*/
+    width: 50%;/*框框的宽度*/
+    padding: 0px;/*将框框的padding设置为零，不然会导致框框里的内容与框边缘有间隔*/
+    /* border:1px solid #000; */
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;/*因固定要求勿改*/
+    top: 0;/*因置顶要求勿改*/
+}
+.daohang li {
+    list-style-type: none;/* 去掉li前的点 */
+    float: left;/*将li设置成做浮动，变为联动*/
+    display: inline;
+}
+.daohang a {
+    display: block;/*将a变成块状*/
+    width: 80px;/*设置块的宽度*/
+    height: 40px;/*设置块的长度*/
+    font-family: Microsoft Yahei;
+    line-height: 40px;/*设置字体在块中的高度*/
+    background-color: white;
+    margin: 5px 10px;/*块里的高宽通过margin设置*/
+    color: black;
+    text-align: center;/*字体居中*/
+    text-decoration: none;/*去掉下划线*/
+    font-size: 15px;
+    border-radius: 20px;
+}
+.daohang a:hover {
+    background-color: rgb(167, 167, 167);
+}
+.daohang a:active{
+    background-color: rgb(80, 80, 80);
+    color: white;
+}
