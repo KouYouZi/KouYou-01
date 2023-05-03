@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="shortcut icon" href=".\cqupt1950_transparency.png">
+    <title>cqupt美图</title>
+    <script src="Bmob-2.4.0.min.js"></script>
+    <script>
+        Bmob.initialize("26667e8db1e9faca", "114514");
+            Bmob.debug(true)
+            function getusername(){
+                let user = Bmob.User.current();
+                var buttonTag = document.getElementById("bst");
+                buttonTag.innerHTML=user.username;
+            }
+    </script>
+</head>
+<body>
+    <div class="daohang">
+        <div>
+            <ul>
+                <li style="height: 50px; width: 50px;"><img src="./icon.png" alt="kouyou-team.icon" height="35px" style="margin: 7.5px;"></li>
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./moblie communication.html">移动通讯</a></li>
+                <li><a href="./cqupt梗图.html">重邮风景</a></li>
+                <li><a href="./never gonna give you up.html" style="color: white;">???</a></li>
+            </ul>
+            <ul style="right: 0%; ">
+                <li style="float: right;"><a href="注册页面.html">注册</a></li>
+                <li style="float: right;"><a href="登录页面.html">登录</a></li>
+                <li><button id="bst" onclick="getusername()">查看用户名</button> </li>
+            </ul>
+        </div>
+    </div>
+    <div style="width: 100%;">
+        <img src="./bg1.jpg" width="100%">
+        <img src="./bg2.jpg" width="100%">
+        <img src="./bg3.jpg" width="100%">
+        <img src="./bg4.jpg" width="100%">
+        <img src="./bg5.jpg" width="100%">
+        <img src="./bg6.jpg" width="100%">
+        <img src="./bg7.jpg" width="100%">
+        <img src="./bg8.jpg" width="100%">
+        <img src="./bg9.jpg" width="100%">
+    </div>
+</body>
+</html>

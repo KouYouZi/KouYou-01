@@ -13,6 +13,8 @@
     color: #BA0000;
 }
 
+
+
 .daohang div{
     margin: 0px auto;
     height: 50px;
@@ -61,4 +63,51 @@
 .daohang a:active{
     background-color: rgb(80, 80, 80);
     color: white;
+}
+
+
+
+.sidecatalog ul {/*设置导航栏的框框*/
+    margin: auto;/*框框整体的位置；因居中要求勿改*/
+    height: auto;/*框框的长度*/
+    width: 100%;/*框框的宽度*/
+    padding: 0px;/*将框框的padding设置为零，不然会导致框框里的内容与框边缘有间隔*/
+    /* border:1px solid #000; */
+    list-style-type: none;
+    overflow: hidden;
+    top: 0;/*因置顶要求勿改*/
+}
+.sidecatalog li {
+    list-style-type: none;/* 去掉li前的点 */
+    /*float: left;/*将li设置成做浮动，变为联动*/
+    display: inline;
+}
+.sidecatalog ol li a {
+    display: block;/*将a变成块状*/
+    width: 100%;/*设置块的宽度*/
+    height: auto;/*设置块的长度*/
+    font-family: Microsoft Yahei;
+    line-height: 35px;/*设置字体在块中的高度*/
+    text-decoration: none;/*去掉下划线*/
+    font-size: 18px;
+    color: rgb(30, 30, 30, 0.875);
+}
+.sidecatalog ol li ul li a {
+    display: block;/*将a变成块状*/
+    width: 100%;/*设置块的宽度*/
+    height: auto;/*设置块的长度*/
+    font-family: Microsoft Yahei;
+    line-height: 25px;/*设置字体在块中的高度*/
+    text-decoration: none;/*去掉下划线*/
+    font-size: 15px;
+    margin-left: 15%;
+    color: rgba(30, 30, 30, 0.875);
+}
+.sidecatalog a:hover {
+    background-color: rgb(222, 222, 222);
+    color: rgb(7, 233, 225);
+}
+.sidecatalog a:active{
+    background-color: rgb(135, 135, 135);
+    color: rgb(7, 147, 185);
 }

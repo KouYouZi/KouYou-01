@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <script src="Bmob-2.4.0.min.js"></script>
+    <link rel="shortcut icon" href=".\cqupt1950_transparency.png">
+    <title>移动通讯</title>
+    <script>
+        Bmob.initialize("26667e8db1e9faca", "114514");
+            Bmob.debug(true)
+            function getusername(){
+                let user = Bmob.User.current();
+                var buttonTag = document.getElementById("bst");
+                buttonTag.innerHTML=user.username;
+            }
+    </script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body style="background-color: rgb(240, 240, 240);">
+    <div class="daohang">
+        <div>
+            <ul>
+                <li style="height: 50px; width: 50px;"><img src="./icon.png" alt="kouyou-team.icon" height="35px" style="margin: 7.5px;"></li>
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./moblie communication.html">移动通讯</a></li>
+                <li><a href="./cqupt梗图.html">重邮风景</a></li>
+                <li><a href="./never gonna give you up.html" style="color: white;">???</a></li>
+            </ul>
+            <ul style="right: 0%; ">
+                <li style="float: right;"><a href="注册页面.html">注册</a></li>
+                <li style="float: right;"><a href="登录页面.html">登录</a></li>
+                <li><button id="bst" onclick="getusername()">查看用户名</button> </li>
+            </ul>
+        </div>
+    </div>
+    <div style="display: flex; padding-top: 3%; padding-left: 1%; padding-right: 1%;">
+        <div style="width: 65%; padding-right: 5%;">
+            <p>
+                <h1>1、移动通信简介</h1>
+                移动通信英文是Mobile communication，移动通信是指移动体之间的通信，或移动体与固定体之间的通信。移动体可以是人，也可以是汽车、火车、轮船、收音机等在移动状态中的物体。移动通信是进行无线通信的现代化技术，这种技术是电子计算机与移动互联网发展的重要成果之一。目前，移动通信已经进入到第五代的发展中，也就是俗称的5G，移动通信也是目前改变世界的几种主要技术之一。
+                <p>
+                    现代移动通信技术主要可以分为低频、中频、高频、甚高频和特高频几个频段，在这几个频段之中，技术人员可以利用移动台技术、基站技术、移动交换技术，对移动通信网络内的终端设备进行连接，满足人们的移动通信需求。从模拟制式的移动通信系统、数字蜂窝通信系统、移动多媒体通信系统，到目前的高速移动通信系统，移动通信技术的速度不断提升，延时与误码现象减少，技术的稳定性与可靠性不断提升，为人们的生产生活提供了多种灵活的通信方式。
+                </p>
+                <p>
+                    移动通信自出现以来，就对人们的生活、生产、工作、娱乐以及政治等产生深刻的影响。随着人们对移动通信技术需求的不断提升，更高质量的通信信号、更加稳定的通信传输，已经成为了移动通信技术未来发展的主要方向。
+                </p>
+                <p>
+                    我国在移动通信领域的发展不乏一些公司的支持，其中罗德与施瓦茨公司向国际和国内的主要手机厂商提供生产测试设备及测试解决方案，并积极向中国3G研发工作提供先进测试手段。
+                </p>
+                <p>
+                    自从R&S进入中国以来，向中国市场提供了众多高精度、高科技、高质量的无线通信，测试测量产品和广播电视产品，为中国的科技发展做出了很大的贡献。其产品和解决方案在国家无线电管理委员会及监测中心、中国民航、广播电视单位、计量部门、产品质量检测单位以及各大研究机构和无线通信生产厂家均得到广泛应用。
+                    <span id="mbdev"></span>
+                </p>
+            </p>
+            <p>
+                <span id="1G"></span>
+                <h1>2、移动通信发展</h1>
+                【第一代――模拟蜂窝通信系统: 1G 】<br><span id="2G"></span>
+                模拟通信阶段；第一代移动电话系统采用了蜂窝组网技术，蜂窝概念由贝尔实验室提出，70年代在世界许多地方得到研究，当第一个试运行网络在芝加哥开通时，美国第一个蜂窝系统AMPS（高级移动电话业务）在1979年成为现实.
+                <p>
+                    【第二代――数字蜂窝移动通信系统: 2G 】<br>
+                    数字通信阶段；由于模拟制式存在的各种缺点，90年代开发出了以数字传输、时分多址和窄带码分多址为主体的移动电话系统，称之为第二代移动电话系统。代表产品分为两类：
+                    <p>
+                        1）<a href="https://baike.baidu.com/item/时分多址">TDMA系统：</a><br>
+                        有代表性的制式有：泛欧GSM、美国D-AMPS和日本PDC。
+                    </p>
+                    <p>
+                        2）<a href="https://baike.baidu.com/item/N-CDMA/4300407">N-CDMA系统</a>：<span id="3G"></span><br>
+                        N-CDMA（码分多址）系列主要是以高通公司为首研制的基于IS-95的N-CDMA（窄带CDMA）。
+                    </p>
+                </p>
+                <p>
+                    【第三代――数字蜂窝移动通信系统: 3G 】<br><span id="4G"></span>
+                    进入高速数据传输阶段，传输速度384K-3.6Mbit/s。全球主要有WCDMA，CDMA2000 和TD-SCDMA 三大分支，中国2008年派发执照。3G实现不同无线网无缝连接，满足多媒体传输要求，内容更丰富的无线通信服务。
+                </p>
+                <p>
+                    【第四代――数字蜂窝移动通信系统: 4G 】<br>
+                    长期演进(LTE,Long Term Evolution)项目是3G的演进，改进并增强了空中接入技术，采用正交频分复用(OFDM)和多路输入输出(MIMO)作为其无线网络标准。<span id="5G"></span>主要特点是在20MHz频谱带宽下提供下行100Mbit/s与上行50Mbit/s的峰值速率，提高容量，降低网络延迟。由于ITU-R对4G标准放宽，LTE以及其他3.9G技术被认为是“4G”。
+                </p>
+                <p>
+                    【第五代――数字蜂窝移动通信系统: 5G 】<br><span id="mbnet"></span>
+                    正在开发阶段。华为2013年披露到2020年用户会享受到20Gbps的商用5G移动网络。2016年11月17号，确认采用华为的Polar Code 作为5G控制信道eMBB场景编码方案。
+                </p>
+            </p>
+            <p>
+                <h1>3、通信网络架构</h1>
+                移动通信网络的组成，其实并不复杂。只需理清三大层！<br>
+                哪三大层？<br>
+                由下至上分别是<a href="https://baike.baidu.com/item/接入层">接入层</a>、<a href="https://baike.baidu.com/item/汇聚层">汇聚层</a>、<a href="https://baike.baidu.com/item/核心层/8750717">核心层</a>。
+                <p>
+                    大家所熟悉的基站，就是接入层设备中的一种。<br><span id="2g3g"></span>
+                    因为一旦多个基站连成了一张蜂窝网络，靠各个基站之间彼此互通，进行自治效率太低！<br>
+                    这就需要引入一个中央控制点，对多个基站进行统一管理了。<br>
+                    <br><b>2G和3G时代</b>：多个基站由一个控制器管理，多个控制器又由核心网来管理，组成了一个三层的金字塔型架构。
+                    <img src="https://pic2.zhimg.com/80/v2-b94d7467db272de2043b3f1f0f460cb1_720w.webp" width="500px"><span id="4g"></span><br><br>
+                    <br><b>4G时代</b>：为了降低时延，简化架构，去掉了基站控制器，基站直接由核心网来进行管理。但是这个架构虽然简单，但用起来却不是那么方便。<br>
+                    <img src="https://pic1.zhimg.com/80/v2-93e8ec3f4f51099407471caf4875f9cc_720w.webp" width="500px">
+                    <br>为啥不方便呢？<br>
+                    答：如果让核心网把一切都管起来的话，负荷太大；如果放权让基站之间点对点地互相协调资源调度，干扰等问题的话，效率低，效果差，结果就是4G终其一生都在跟这个架构死磕。<br>
+                    <br><b id="5g">5G时代</b>：吸取4G时代的教训，又走回到了2G和3G时代的老路——把基站拆分成了集中单元（CU）和分布单元（DU），一个CU管理多个DU，然后核心网再来管理数量较少的CU。<br>
+                    <img src="https://pic1.zhimg.com/v2-1a494bf2f6fa841d5d4e1f330ddca564_r.jpg" width="500px">
+                </p>
+            </p>
+        </div>
+        <div style="width: 25%; padding-left: 5%;">
+            <!-- 固定侧边栏，抄张恒的侧边栏效果 -->
+            <div style="height: 90%; bottom: 0px; border-left: 2px solid rgba(150, 165, 165, 0.8); border-radius: 3%; position: fixed;">
+                <div style="padding: 1%; padding-top: 2%;">
+                    <img src="https://bpic.588ku.com/back_origin_min_pic/21/05/26/d0de4b3ef164fd51e592ae25b23671b3.jpg" width="227px">
+                </div>
+                <div class="sidecatalog">
+                    <ol>
+                        <li><a href="#">1. 移动通讯简介</a></li>
+                        <li>
+                            <a href="#mbdev">2. 移动通信发展</a>
+                            <ul type="none">
+                                <li><a href="#1G">1G</a></li>
+                                <li><a href="#2G">2G</a></li>
+                                <li><a href="#3G">3G</a></li>
+                                <li><a href="#4G">4G</a></li>
+                                <li><a href="#5G">5G</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#mbnet">3. 通信网络架构</a>
+                            <ul type="none">
+                                <li><a href="#2g3g">2G和3G时代</a></li>
+                                <li><a href="#4g">4G时代</a></li>
+                                <li><a href="#5g">5G时代</a></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

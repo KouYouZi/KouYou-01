@@ -11,31 +11,38 @@
         <script>
             Bmob.initialize("26667e8db1e9faca", "114514");
             Bmob.debug(true)
+            function getusername(){
+                let user = Bmob.User.current();
+                var buttonTag = document.getElementById("bst");
+                buttonTag.innerHTML=user.username;
+            }
+
         </script>
         <link rel="stylesheet" type="text/css" href="./style.css">
     </head>
-    <body style="background-image: url(https://github.com/KouYouZi/KouYou-01/blob/main/TengFeiGate0.168.png?raw=true); background-size: cover ; background-attachment: fixed;">
+    <body style="background-image: url(./TengFeiGate0.168.png); background-size: cover ; background-attachment: fixed;">
         <div class="daohang">
             <div>
                 <ul>
                     <li style="height: 50px; width: 50px;"><img src="./icon.png" alt="kouyou-team.icon" height="35px" style="margin: 7.5px;"></li>
-                    <li><a href="#">首页</a></li>
-                    <li><a href="">????</a></li>
-                    <li><a href="">????</a></li>
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./moblie communication.html">移动通讯</a></li>
+                    <li><a href="./cqupt梗图.html">重邮风景</a></li>
                     <li><a href="./never gonna give you up.html" style="color: white;">???</a></li>
                 </ul>
                 <ul style="right: 0%; ">
-                    <li style="float: right;"><a href="">注册</a></li>
-                    <li style="float: right;"><a href="">登录</a></li>
+                    <li style="float: right;"><a href="注册页面.html">注册</a></li>
+                    <li style="float: right;"><a href="登录页面.html">登录</a></li>
+                    <li><button id="bst" onclick="getusername()">查看用户名</button> </li>
                 </ul>
             </div>
         </div>
-        <div style="padding: 3%; padding: 4%;">
+        <div style="padding: 3%; padding: 4%;" id="text1">
             <div style="width: auto; background-color: rgba(255, 255, 255, 0.7); border-radius: 20px; padding: 3%">
                 <div lang="zh-CN" style="display: flex; width: auto; justify-content: center;">
                     <div style="width: auto; padding-right: 1.5%;">
-                        <div>
-                            <h1 style="font-size: 400%; margin: 0%;">3G芯片</h1>
+                        <div >
+                            <h1 style="font-size: 400%; margin: 0%;" >3G芯片</h1>
                         </div>
                         <div style="width: auto; padding-left: 8%; padding-right: 3%; padding-top: 5%;">
                             <div style="border-color:brown;background-color:brown; display: flex;">
@@ -60,9 +67,9 @@
                             <h2>
                                 <span id="概述">概述</span>
                             </h2>
-                            <p>2005年10月9日下午2:30，重庆市人民政府新闻办公室在重庆市新闻发布中心举行了新闻发布会。会议郑重发布了“世界第一颗0.13微米工艺的TD-SCDMA 3G手机核心芯片在重庆诞生”这一令国人自豪和骄傲的重大喜讯。
-                                重庆市人民政府新闻办和重庆邮电学院在此间联合宣布：具有我国自主知识产权的世界首枚“通芯一号”3G手机核心芯片已由重庆重邮信科股份有限公司（简称重邮信科）研发成功，并向媒体人士展示亮相。
-                                这是世界上第一枚0.13微米工艺的TD-SCDMA 3G手机基带芯片。它的诞生，标志着我国3G通信核心芯片等关键技术已达到了世界领先水平。实现了从“中国制造”到“中国创造”的跨越。
+                            <p class="content">&emsp;2005年10月9日下午2:30，重庆市人民政府新闻办公室在重庆市新闻发布中心举行了新闻发布会。会议郑重发布了<strong>“世界第一颗0.13微米工艺的TD-SCDMA 3G手机核心芯片在重庆诞生”</strong>这一令国人自豪和骄傲的重大喜讯。
+                                重庆市人民政府新闻办和重庆邮电学院在此间联合宣布：具有我国自主知识产权的世界首枚<strong>“通芯一号”</strong>3G手机核心芯片已由重庆重邮信科股份有限公司（简称重邮信科）研发成功，并向媒体人士展示亮相。
+                                这是世界上第一枚0.13微米工艺的TD-SCDMA 3G手机基带芯片。它的诞生，标志着我国3G通信核心芯片等关键技术已达到了世界领先水平。实现了<strong>从“中国制造”到“中国创造”</strong>的跨越。
                             </p>
                         </div>
 
@@ -70,64 +77,27 @@
                             <h2>
                                 <span id="工艺性能及特点">工艺性能及特点</span>
                             </h2>
-                            <p>
-                                功耗小，尺寸小，成本低； 多内核结构，支持TD-SCDMA高速处理，可延伸到后3G功能； 芯片包含专用检测电路和解码电路，处理速度快； 采用成熟的商用专业模块，适用于批量生产； C3230“通芯一号增强版”基带处理芯片 (BaseBand Processor Chip)
-                            </p>
-                            <pre style="font-size: 16px;">
-    芯片介绍
-    TD-SCDMA标准：
-    最高可支持3GPP R6规范。
-    工艺：
-    130纳米CMOS工艺
-    时钟频率：
-    最高频率122.88MHz
-    芯片核：
-    一颗MCU（ARM926EJ）， 两颗DSP（ZSP500）
-    数据传输能力：
-    支持TD-MBMS业务
-    支持384Kbps TD-SCDMA业务
-    支持1.1Mbps的HSDPA 业务
-    存储接口：
-    外部存储器慢速接口,支持NorFlash/Sram/NandFlash 的访问
-    外部存储器快速接口,支持SDRAM 的访问
-    外围设备接口：
-    外部协处理器API接口
-    1 个PCM 话音接口
-    UART接口，可用于跟踪，以及支持蓝牙、应用处理器等
-    1个SPI接口
-    I2C接口
-    USB1.1接口
-    GPIO接口
-    JTAG接口，用于调试
-    通用Timer/Watchdog
-    其他参数：
-    3.3V I/O 电压供电及1.2V 内核电压供电
-    13mmx13mm 脚LFBGA 封装
-    取得SGS的ROHS认证
-                            </pre>
-                        </div>
-                        
-                        <div style="padding: 1% 0%;">
-                            <h2>
-                                <span id="移动通讯">移动通讯</span>
-                            </h2>
-                            <p>
-                                移动通信(Mobile communication)是移动体之间的通信，或移动体与固定体之间的通信。
-                                移动体可以是人，也可以是汽车、火车、轮船、收音机等在移动状态中的物体。
-                            </p>
-                            <p>
-                                移动通信是进行无线通信的现代化技术，这种技术是电子计算机与移动互联网发展的重要成果之一。
-                                移动通信技术经过第一代、第二代、第三代、第四代技术的发展，目前，已经迈入了第五代发展的时代(5G移动通信技术)，这也是目前改变世界的几种主要技术之一。
-                            </p>
-                            <p>
-                                现代移动通信技术主要可以分为低频、中频、高频、甚高频和特高频几个频段，在这几个频段之中，技术人员可以利用移动台技术、基站技术、移动交换技术，对移动通信网络内的终端设备进行连接，满足人们的移动通信需求。
-                                从模拟制式的移动通信系统、数字蜂窝通信系统、移动多媒体通信系统，到目前的高速移动通信系统，移动通信技术的速度不断提升，延时与误码现象减少，技术的稳定性与可靠性不断提升，为人们的生产生活提供了多种灵活的通信方式。
-                            </p>
-                            <p>
-                                在过去的半个世纪中，移动通信的发展对人们的生活、生产、工作、娱乐乃至政治、经济和文化都产生了深刻的影响，30年前幻想中的无人机、智能家居、网络视频、网上购物等均已实现。
-                                移动通信技术经历了模拟传输、数字语音传输、互联网通信、个人通信、新一代无线移动通信5个发展阶段。
-                            </p>
-                        </div>
+                            <ol class="content">
+                                <li>功耗小，尺寸小，成本低；</li>
+                                <li>多内核结构，支持TD-SCDMA高速处理，可延伸到后3G功能；</li>
+                                <li>芯片包含专用检测电路和解码电路，处理速度快；</li>
+                                <li>采用成熟的商用专业模块，适用于批量生产；</li>
+                                <li> C3230<strong>“通芯一号增强版”</strong>基带处理芯片 (BaseBand Processor Chip)</li>
+                            </ol>
+                            <p class="content">
+    <h2 id="text2">芯片介绍</h2>
+    <ul class="content">
+        <li>TD-SCDMA标准： 最高可支持3GPP R6规范</li>
+        <li>工艺： 130纳米CMOS工艺</li>
+        <li>时钟频率： 最高频率122.88MHz</li>
+        <li>芯片核： 一颗MCU（ARM926EJ）， 两颗DSP（ZSP500）</li>
+        <li>数据传输能力： 支持TD-MBMS业务、支持384Kbps TD-SCDMA业务、支持1.1Mbps的HSDPA 业务</li>
+        <li>存储接口：外部存储器慢速接口,支持NorFlash/Sram/NandFlash 的访问、外部存储器快速接口,支持SDRAM 的访问</li>
+        <li>外围设备接口： 外部协处理器API接口、1 个PCM 话音接口、UART接口，可用于跟踪，以及支持蓝牙、应用处理器等、1个SPI接口</li>
+        <li>I2C接口、USB1.1接口、 GPIO接口、JTAG接口，用于调试、通用Timer/Watchdog</li>
+        <li>其他参数： 3.3V I/O 电压供电及1.2V 内核电压供电、13mmx13mm 脚LFBGA 封装、取得SGS的ROHS认证</li>
+    </ul>
+    </div>
                         
                         <div style="padding: 1% 0%;">
                             <h2>
@@ -135,37 +105,37 @@
                             </h2>
                             <div style="display: flex;">
                                 <div>
-                                    <p>
-                                        工信部的数据显示，截至2018年底，全国移动电话总数达到15.7亿户，其中4G用户总数达到11.7亿户。也就是说，2018年中国还有4亿的2G和3G用户。
+                                    <p class="content">
+                                        &emsp;工信部的数据显示，截至2018年底，全国移动电话总数达到15.7亿户，其中4G用户总数达到11.7亿户。也就是说，2018年中国还有4亿的2G和3G用户。
                                         2019年底的数据显示，全国移动电话用户总数超16亿户，其中 4G用户总数达到12.8亿户，全年净增1.17亿户，占移动电话用户总数的80.1%，2G和3G用户的数量则出现了相应的大幅下降。但计算下来，全国仍有超过3亿的2G和3G用户。
                                     </p>
-                                    <p>
-                                        对中国广大农村地区的很多中老年移动手机用户而言，使用手机的目的非常简单，也就是能够接打电话，有人到现在为止依旧连手机短信都不会发送。
+                                    <p class="content">
+                                        &emsp;对中国广大农村地区的很多中老年移动手机用户而言，使用手机的目的非常简单，也就是能够接打电话，有人到现在为止依旧连手机短信都不会发送。
                                         “手机就是用来打电话的，要那么多复杂的功能干啥？”这是一部分老年人心中真实的想法。
                                     </p>
-                                    <p>
-                                        但是当下的形势发展，推动着这部分庞大的人群必须跟上科技发展潮流，因为很多人发现，自己的3G网络手机已经无法使用了。使用2G手机的人则更加边缘化。
+                                    <p class="content">
+                                        &emsp;但是当下的形势发展，推动着这部分庞大的人群必须跟上科技发展潮流，因为很多人发现，自己的3G网络手机已经无法使用了。使用2G手机的人则更加边缘化。
                                     </p>
-                                    <p>
-                                        移动公司的一位工程师告诉北京科技报 | 科学加记者，目前下滑速度最快的应该是3G用户，根据要求，这两年全国的3G网络都在较大规模地撤基站，很多地方甚至3G网络已经完全不可用。
+                                    <p class="content">
+                                        &emsp;移动公司的一位工程师告诉北京科技报 | 科学加记者，目前下滑速度最快的应该是3G用户，根据要求，这两年全国的3G网络都在较大规模地撤基站，很多地方甚至3G网络已经完全不可用。
                                         停用的3G网络基站，很多都被收回了相关的无线电台执照。这种动向拉开了3G网络退出历史舞台的序幕。
                                     </p>
                                 </div>
                                 <img alt="天翼3G" src="./tianyi3g.jpg" width="310px">
                             </div>
-                            <p>
-                                中国通信行业知名观察家项立刚表示， 3G手机能够处理图像、音乐、视频流等多种媒体形式，提供包括网页浏览、电话会议、电子商务等多种信息服务，在服务功能上比2G要强大得多。
+                            <p class="content">
+                                &emsp;中国通信行业知名观察家项立刚表示， 3G手机能够处理图像、音乐、视频流等多种媒体形式，提供包括网页浏览、电话会议、电子商务等多种信息服务，在服务功能上比2G要强大得多。
                                 但是3G时代还只能算作是移动互联网生活的雏形，重社交、轻应用，也让其存在先天性的短板。
                             </p>
-                            <p>
-                                从2010年左右开始，随着4G时代的到来，超高速移动网络通信的问题得以解决，手机的服务功能变得更加庞大，加上wifi的普及，用手机在线看视频、视频聊天、地图导航等应用成为很多人的日常。
+                            <p class="content">
+                                &emsp;从2010年左右开始，随着4G时代的到来，超高速移动网络通信的问题得以解决，手机的服务功能变得更加庞大，加上wifi的普及，用手机在线看视频、视频聊天、地图导航等应用成为很多人的日常。
                             </p>
-                            <p>
-                                这些年随着4G技术的发展和网络基站的不断扩张，我国已经拥有全球覆盖最完善的4G网络。截至2019年底，4G基站数达到544万个，占基站总数的64.7%。
+                            <p class="content">
+                                &emsp;这些年随着4G技术的发展和网络基站的不断扩张，我国已经拥有全球覆盖最完善的4G网络。截至2019年底，4G基站数达到544万个，占基站总数的64.7%。
                                 项立刚表示，4G是3G的升级，随着4G变得越来越成熟，能力越来越强，3G就完全可以被替代了。
                             </p>
-                            <p>
-                                此外，由于4G网络是在3G网络基础上的升级，在4G网络存在的情况下，3G网络的劣势很快就显现出来。比如其传输速度远远达不到4G的要求，同时因为发展时间不太长，3G网络的覆盖面也没有多大，就是撤网也不会造成多大的损失。
+                            <p class="content">
+                                &emsp;此外，由于4G网络是在3G网络基础上的升级，在4G网络存在的情况下，3G网络的劣势很快就显现出来。比如其传输速度远远达不到4G的要求，同时因为发展时间不太长，3G网络的覆盖面也没有多大，就是撤网也不会造成多大的损失。
                             </p>
                             <span class="heimu">
                                 答案是没有未来
