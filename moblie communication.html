@@ -18,6 +18,24 @@
             }
     </script>
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <style>
+        .Front {
+            border-left: 5px solid aqua;
+            display: flex;
+        }
+        .Front h1 {
+            margin: 0.5%;
+        }
+        .Line {
+            width:70%;
+            margin: 0% 4%;
+        }
+        .Line div {
+            height: 50%;
+            border-bottom: 3px solid rgb(117, 244, 255);
+            border-radius: 9%;
+        }
+    </style>
 </head>
 <body style="background-color: rgb(240, 240, 240);">
     <div class="daohang">
@@ -32,14 +50,19 @@
             <ul style="right: 0%; ">
                 <li style="float: right;"><a href="注册页面.html">注册</a></li>
                 <li style="float: right;"><a href="登录页面.html">登录</a></li>
-                <li><button id="bst" onclick="getusername()">查看用户名</button> </li>
+                <li style="float: right;"><button id="bst" onclick="getusername()">查看用户名</button></li>
             </ul>
         </div>
     </div>
     <div style="display: flex; padding-top: 3%; padding-left: 1%; padding-right: 1%;">
         <div style="width: 65%; padding-right: 5%;">
             <p>
-                <h1>1、移动通信简介</h1>
+                <div class="Front">
+                    <div style="width: 30%;"><h1>1、移动通信简介</h1></div>
+                    <div class="Line">
+                        <div></div>
+                    </div>
+                </div>
                 移动通信英文是Mobile communication，移动通信是指移动体之间的通信，或移动体与固定体之间的通信。移动体可以是人，也可以是汽车、火车、轮船、收音机等在移动状态中的物体。移动通信是进行无线通信的现代化技术，这种技术是电子计算机与移动互联网发展的重要成果之一。目前，移动通信已经进入到第五代的发展中，也就是俗称的5G，移动通信也是目前改变世界的几种主要技术之一。
                 <p>
                     现代移动通信技术主要可以分为低频、中频、高频、甚高频和特高频几个频段，在这几个频段之中，技术人员可以利用移动台技术、基站技术、移动交换技术，对移动通信网络内的终端设备进行连接，满足人们的移动通信需求。从模拟制式的移动通信系统、数字蜂窝通信系统、移动多媒体通信系统，到目前的高速移动通信系统，移动通信技术的速度不断提升，延时与误码现象减少，技术的稳定性与可靠性不断提升，为人们的生产生活提供了多种灵活的通信方式。
@@ -57,11 +80,16 @@
             </p>
             <p>
                 <span id="1G"></span>
-                <h1>2、移动通信发展</h1>
-                【第一代――模拟蜂窝通信系统: 1G 】<br><span id="2G"></span>
+                <div class="Front">
+                    <div style="width: 30%;"><h1>2、移动通信发展</h1></div>
+                    <div class="Line">
+                        <div></div>
+                    </div>
+                </div>
+                <b>【第一代――模拟蜂窝通信系统: 1G 】</b><br><span id="2G"></span>
                 模拟通信阶段；第一代移动电话系统采用了蜂窝组网技术，蜂窝概念由贝尔实验室提出，70年代在世界许多地方得到研究，当第一个试运行网络在芝加哥开通时，美国第一个蜂窝系统AMPS（高级移动电话业务）在1979年成为现实.
                 <p>
-                    【第二代――数字蜂窝移动通信系统: 2G 】<br>
+                    <b>【第二代――数字蜂窝移动通信系统: 2G 】</b><br>
                     数字通信阶段；由于模拟制式存在的各种缺点，90年代开发出了以数字传输、时分多址和窄带码分多址为主体的移动电话系统，称之为第二代移动电话系统。代表产品分为两类：
                     <p>
                         1）<a href="https://baike.baidu.com/item/时分多址">TDMA系统：</a><br>
@@ -73,20 +101,25 @@
                     </p>
                 </p>
                 <p>
-                    【第三代――数字蜂窝移动通信系统: 3G 】<br><span id="4G"></span>
+                    <b>【第三代――数字蜂窝移动通信系统: 3G 】</b><br><span id="4G"></span>
                     进入高速数据传输阶段，传输速度384K-3.6Mbit/s。全球主要有WCDMA，CDMA2000 和TD-SCDMA 三大分支，中国2008年派发执照。3G实现不同无线网无缝连接，满足多媒体传输要求，内容更丰富的无线通信服务。
                 </p>
                 <p>
-                    【第四代――数字蜂窝移动通信系统: 4G 】<br>
+                    <b>【第四代――数字蜂窝移动通信系统: 4G 】</b><br>
                     长期演进(LTE,Long Term Evolution)项目是3G的演进，改进并增强了空中接入技术，采用正交频分复用(OFDM)和多路输入输出(MIMO)作为其无线网络标准。<span id="5G"></span>主要特点是在20MHz频谱带宽下提供下行100Mbit/s与上行50Mbit/s的峰值速率，提高容量，降低网络延迟。由于ITU-R对4G标准放宽，LTE以及其他3.9G技术被认为是“4G”。
                 </p>
                 <p>
-                    【第五代――数字蜂窝移动通信系统: 5G 】<br><span id="mbnet"></span>
+                    <b>【第五代――数字蜂窝移动通信系统: 5G 】</b><br><span id="mbnet"></span>
                     正在开发阶段。华为2013年披露到2020年用户会享受到20Gbps的商用5G移动网络。2016年11月17号，确认采用华为的Polar Code 作为5G控制信道eMBB场景编码方案。
                 </p>
             </p>
             <p>
-                <h1>3、通信网络架构</h1>
+                <div class="Front">
+                    <div style="width: 30%;"><h1>3、通信网络架构</h1></div>
+                    <div class="Line">
+                        <div></div>
+                    </div>
+                </div>
                 移动通信网络的组成，其实并不复杂。只需理清三大层！<br>
                 哪三大层？<br>
                 由下至上分别是<a href="https://baike.baidu.com/item/接入层">接入层</a>、<a href="https://baike.baidu.com/item/汇聚层">汇聚层</a>、<a href="https://baike.baidu.com/item/核心层/8750717">核心层</a>。

@@ -43,7 +43,7 @@
     float: left;/*将li设置成做浮动，变为联动*/
     display: inline;
 }
-.daohang a {
+.daohang a, .daohang button{
     display: block;/*将a变成块状*/
     width: 80px;/*设置块的宽度*/
     height: 40px;/*设置块的长度*/
@@ -56,11 +56,12 @@
     text-decoration: none;/*去掉下划线*/
     font-size: 15px;
     border-radius: 20px;
+    border: white;
 }
-.daohang a:hover {
+.daohang a:hover, .daohang button:hover {
     background-color: rgb(167, 167, 167);
 }
-.daohang a:active{
+.daohang a:active, .daohang button:active{
     background-color: rgb(80, 80, 80);
     color: white;
 }
